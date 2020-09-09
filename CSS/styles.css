@@ -7,10 +7,12 @@ footer{
     padding: 20px, 0;
 }
 
-.navbar{
-   background-color:#f0f0f0;;
-}
+
 
 .slideTextBG{
     background-color:rgba(0,0,0,0.6);
+}
+
+.classesBG{
+    background-color:teal;
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href= "css/styles.css">
-    <title>Makerspace | Maker Nexus | Sunnyvale, California</title>
+    <title>Maker Nexus | Makerspace | Sunnyvale, California</title>
 </head>
 
 <body>
@@ -33,20 +33,23 @@
 -->
 
 <!--Navigation bar 2.0-->
-<nav class="navbar navbar-expand-sm navbar-light sticky-top align-content-end">
-    <a class="navbar-brand" href="index.html"><img src="https://static.wixstatic.com/media/85a375_7559972cf01f406da12b19f545f36efa~mv2.png/v1/fill/w_122,h_118,al_c,q_85,usm_0.66_1.00_0.01/85a375_7559972cf01f406da12b19f545f36efa~mv2.webp" height="30" width ="30"></a>
+<nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top align-content-end">
+    <a class="navbar-brand" href="index.html"><img src="https://static.wixstatic.com/media/85a375_7559972cf01f406da12b19f545f36efa~mv2.png/v1/fill/w_122,h_118,al_c,q_85,usm_0.66_1.00_0.01/85a375_7559972cf01f406da12b19f545f36efa~mv2.webp" height="30" width ="30">Maker Nexus</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mnNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse text-center" id="mnNavbar">
-        <ul class="navbar-nav p-0 justify-content-center align-self-center">
-            <li class="nav-item text-wrap justify-content-center align-self-center"><a class="nav-link" href="#"></a>Classes and Events</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center"><a href="#"></a>Reservations</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center"><a class="nav-link" href="#"></a>About Us</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center"><a class="nav-link" href="#"></a>Support Us</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center"><a class="nav-link" href="#"></a>Member Links</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center"><a class="nav-link" href="#"></a><button class="btn btn-primary p-auto">Book a Tour</button></li>
+        <ul class="navbar-nav p-0 justify-content-center align-self-center d-flex">
+            <li class="nav-item text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Classes and Events</li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Reservations</li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>About Us</li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Support Us</li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Member Links</li>
         </ul>
+        <span class="navbar-text ml-auto">
+            <button class="btn btn-primary"><a href="#" class="text-light">Book a Tour</a></button>
+           
+        </span>
     </div>
 </nav>
 
@@ -101,7 +104,7 @@
             <div class="carousel-caption text-left slideTextBG">
                 <h1>Learn</h1>
                 <p> Learn new skills at Maker Nexus. With classes for all ages and skill levels, everyone can become makers.</p>
-                <div class="row">
+                <div class="row mx-auto">
                     <div class="col">
                         <a href="#" class="btn btn-primary align-self-center">Youth Classes and Camps</a>
                     </div>
@@ -130,17 +133,17 @@
         <div class="carousel-item">
             <!-- Image by Monica Melton, unsplash.com https://unsplash.com/photos/oc_XTqWezp4-->
             <img src="img/monica-melton-oc_XTqWezp4-unsplash.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption text-left slideTextBG"> 
+            <div class="carousel-caption text-left  slideTextBG"> 
                 <h1>Share</h1>
                 <p>Help our community of makers. Volunteer your time, collaborate with others, share information in the wiki.</p>
-                <div class="row justify-content-center">
-                    <div class="col align-self-center">
+                <div class="row mx-auto">
+                    <div class="col">
                         <a href="#" class="btn btn-primary">Volunteer</a>
                     </div>
-                    <div class="col align-self-center">
+                    <div class="col">
                         <a href="#" class="btn btn-primary">Get Involved</a>
                     </div>
-                    <div class="col align-self-center">
+                    <div class="col">
                         <a href="#" class="btn btn-primary">Wiki</a>
                     </div>
                 </div>
@@ -159,16 +162,83 @@
 
 
 <!--List the three class types MN offers-->
-
+<div class="container-fluid classesBG p-3">
+    <div class="row justify-content-center">
+        <h3 class="text-light">Take Classes</h3>
+    </div>
+    <div class="row p-auto m-auto">
+        <div class="col">
+            <div class="row justify-content-center">
+                <h1 class="display-1 text-light"><i class="fa fa-child"></i></h1>
+            </div>
+            <div class="row justify-content-center">
+                <a href="#" class="btn btn-primary">Youth Classes and Camps</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h1 class="display-1 text-light"><i class="fa fa-user"></i></h1>
+            </div>
+            <div class="row justify-content-center">
+                <a href="#" class="btn btn-primary">Adult Classes</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h1 class="display-1 text-light"><i class="fa fa-building"></i></h1>
+            </div>
+            <div class="row justify-content-center">
+                <a href="#" class="btn btn-primary">Teambuilding Events</a>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- List the types of tools MN offers, link to Reservation page-->
-
+<div class="container-fluid m-3">
+    <div class="row justify-content-center">
+        <h3>Use Our Tools</h3>
+    </div>
+    <div class="row">
+        <!--Here's where the list of tools and names goes-->
+    </div>
+    <div class="row justify-content-center">
+        <a href="#" class="btn btn-primary">Book Time</a>
+    </div>
+</div>
 <!--Newsletter-->
+<div class="container-flex classesBG">
+    <div class="row justify-content-center">
+        <h3>Newsletter</h3>      
+    </div>
+    <div class="row justify-content-center">
+        <!--Something about signing up for the newsletter-->
+    </div>
+    <div class="row justify-content-center">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="email" class="form-control" id="newsletterEmail" placeholder="email@example.com">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>     
+    </div>
+</div>
 
 <!--Dontations, blah-->
+<div class="container-fluid">
+    <div class="row">
+        <h3>Donate</h3>
+    </div>
+    <div class="row">
+        <!---->
+    </div>
+    <div class="row">
+    
+    </div>
+</div>
 
 <!--Contact us-->
 
-
+<!--Partnerships-->
 
  <!-- 
         <div  class="container-fluid">
