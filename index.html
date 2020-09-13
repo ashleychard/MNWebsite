@@ -5,78 +5,95 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css"/>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' />
     <link rel="stylesheet" href= "css/styles.css">
     <title>Maker Nexus | Makerspace | Sunnyvale, California</title>
+
+    <!--Map Plugin-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
 </head>
 
 <body>
 
-    <!--
-    <div class="navbar navbar-expand-sm navbar-light sticky-top">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#makerNexusNavbar"> 
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="makerNexusNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Classes and Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Reservations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Support Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
--->
 
 <!--Navigation bar 2.0-->
 <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top align-content-end">
-    <a class="navbar-brand" href="index.html"><img src="https://static.wixstatic.com/media/85a375_7559972cf01f406da12b19f545f36efa~mv2.png/v1/fill/w_122,h_118,al_c,q_85,usm_0.66_1.00_0.01/85a375_7559972cf01f406da12b19f545f36efa~mv2.webp" height="30" width ="30">Maker Nexus</a>
+    <a class="navbar-brand" href="index.html"><img src="https://static.wixstatic.com/media/85a375_7559972cf01f406da12b19f545f36efa~mv2.png/v1/fill/w_122,h_118,al_c,q_85,usm_0.66_1.00_0.01/85a375_7559972cf01f406da12b19f545f36efa~mv2.webp" height="30" width ="30"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mnNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse text-center" id="mnNavbar">
         <ul class="navbar-nav p-0 justify-content-center align-self-center d-flex">
-            <li class="nav-item text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Classes and Events</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Reservations</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>About Us</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Support Us</li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex"><a class="nav-link" href="#"></a>Member Links</li>
+            <li class="nav-item text-wrap justify-content-center align-self-center d-flex dropdown">
+                <a class="nav-link text-wrap dropdown-toggle" href="#" id="classesAndEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Classes and Events</a>
+                <div class="dropdown-menu" aria-labelledby="classesAndEvents">
+                    <a class="dropdown-item href="#">Youth Classes and Camps</a>
+                    <a class="dropdown-item href="#">Adult Classes</a>
+                    <a class="dropdown-item href="#">Teambuilding Events</a>
+                </div>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+                <a class="nav-link" href="#" >Reservations</a>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex dropdown">
+                <a class="nav-link text-wrap dropdown-toggle"  id="classesAndEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Support Us</a>
+                <div class="dropdown-menu" aria-labelledby="classesAndEvents">
+                    <a class="dropdown-item" href="#">Donate</a>
+                    <a class="dropdown-item" href="#">Volunteer</a>
+                    <a class="dropdown-item" href="#">Spread the Word</a>
+                </div>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+                <a class="nav-link" href="#">Membership</a>
+            </li>
         </ul>
         <span class="navbar-text ml-auto">
             <button class="btn btn-primary"><a href="#" class="text-light">Book a Tour</a></button>
-           
         </span>
     </div>
 </nav>
 
 <!--Jumbotron gives important information about COVID-19-->
-<!--TODO: Make this go away/hide or something. It's way too big.-->
-<div class="jumbotron">
-    <h1>Maker Nexus is OPEN for members, classes, and camps</h1>
-    <p class="lead">We are following the guidelines from the Santa Clara County Public Health Commission</p>
-    <p class="text-danger">There are no drop in visits allowed at this time. Book a workspace before entering the building.</p>
-    <a  class="btn btn-primary" href="#" function="button">Reserve your work area</a>
-    <hr class="my-4">
-    <h2>COVID-19 guidelines</h2>
-    <ul>
-        <li><b>Be respectful and keep others safe. </b>Stay at home if you don't feel well or have been exposed to someon who has tested postive to COVID-19.</li>
-        <li><b>Help us with contact tracing. </b>Use your RFID card to enter the building.</li>
-        <li><b>Keep your face covered. </b>Wear a face mask while in the building and parking lot.</li>
-        <li><b>Social distancing. </b>Keep at least 6 feet from other people.</li>
-        <li><b>Clean your hands. </b>Wash your hands or use hand sanitizer when you enter the building.</li>
-        <li><b>Disinfect your space. </b>Clean and sanitize objects you touched after you are done with them.</li>
-        <li><b>Stick to your reserved space. </b> Only use the space and workstation you have reserved</li>
-        <li><b>No food or drink. </b>Do not consume food or drink inside the workspace.</li>
-    </ul>
-    <hr class="my-4">
-    <h2>COVID-19 relief efforts</h2>
-    <p>Maker Nexus was part of a local effort to make and give away more than 200,000 face shields!</p>
-    <p>Learn more about our COVID-19 relief efforts.</p>
-    <a class="btn btn-info" href="https://www.covidshieldnexus.org/" role="button">COVID Shield Project</a>
+<div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            COVID-19 Information
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            <h1>Maker Nexus is OPEN for members, classes, and camps</h1>
+                <p class="lead">We are following the guidelines from the Santa Clara County Public Health Commission</p>
+                <p class="text-danger">There are no drop in visits allowed at this time. Book a workspace before entering the building.</p>
+                <a  class="btn btn-primary" href="#" function="button">Reserve your work area</a>
+                <hr class="my-4">
+                <h2>COVID-19 guidelines</h2>
+                <ul>
+                    <li><b>Be respectful and keep others safe. </b>Stay at home if you don't feel well or have been exposed to someon who has tested postive to COVID-19.</li>
+                    <li><b>Help us with contact tracing. </b>Use your RFID card to enter the building.</li>
+                    <li><b>Keep your face covered. </b>Wear a face mask while in the building and parking lot.</li>
+                    <li><b>Social distancing. </b>Keep at least 6 feet from other people.</li>
+                    <li><b>Clean your hands. </b>Wash your hands or use hand sanitizer when you enter the building.</li>
+                    <li><b>Disinfect your space. </b>Clean and sanitize objects you touched after you are done with them.</li>
+                    <li><b>Stick to your reserved space. </b> Only use the space and workstation you have reserved</li>
+                    <li><b>No food or drink. </b>Do not consume food or drink inside the workspace.</li>
+                </ul>
+                <hr class="my-4">
+                <h2>COVID-19 relief efforts</h2>
+                <p>Maker Nexus was part of a local effort to make and give away more than 200,000 face shields!</p>
+                <p>Learn more about our COVID-19 relief efforts.</p>
+                <a class="btn btn-info" href="https://www.covidshieldnexus.org/" role="button">COVID Shield Project</a>
+        </div>
+      </div>
+    </div>
 </div>
 
   <!--Main Information Carousel. I am using stock images from Unsplash for now-->
@@ -101,10 +118,10 @@
         <div class="carousel-item">
             <!--Image from Jeswin Thomas, unsplash.com,  https://unsplash.com/photos/uXsBGF5CrpU-->
             <img src="img/jeswin-thomas-uXsBGF5CrpU-unsplash.jpg" class="d-block w-100" alt="A young man works on an automobile">
-            <div class="carousel-caption text-left slideTextBG">
+            <div class="carousel-caption text-left slideTextBG m-0">
                 <h1>Learn</h1>
                 <p> Learn new skills at Maker Nexus. With classes for all ages and skill levels, everyone can become makers.</p>
-                <div class="row mx-auto">
+                <div class="row m-0">
                     <div class="col">
                         <a href="#" class="btn btn-primary align-self-center">Youth Classes and Camps</a>
                     </div>
@@ -133,17 +150,17 @@
         <div class="carousel-item">
             <!-- Image by Monica Melton, unsplash.com https://unsplash.com/photos/oc_XTqWezp4-->
             <img src="img/monica-melton-oc_XTqWezp4-unsplash.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption text-left  slideTextBG"> 
+            <div class="carousel-caption text-left slideTextBG"> 
                 <h1>Share</h1>
                 <p>Help our community of makers. Volunteer your time, collaborate with others, share information in the wiki.</p>
-                <div class="row mx-auto">
-                    <div class="col">
+                <div class="row m-0">
+                    <div class="col d-flex justify-content-center margin-auto">
                         <a href="#" class="btn btn-primary">Volunteer</a>
                     </div>
-                    <div class="col">
+                    <div class="col d-flex justify-content-center margin-auto">
                         <a href="#" class="btn btn-primary">Get Involved</a>
                     </div>
-                    <div class="col">
+                    <div class="col d-flex justify-content-center margin-auto">
                         <a href="#" class="btn btn-primary">Wiki</a>
                     </div>
                 </div>
@@ -169,7 +186,7 @@
     <div class="row p-auto m-auto">
         <div class="col">
             <div class="row justify-content-center">
-                <h1 class="display-1 text-light"><i class="fa fa-child"></i></h1>
+                <h1 class="display-1 text-light"><i class="fas fa-user-astronaut "></i></h1>
             </div>
             <div class="row justify-content-center">
                 <a href="#" class="btn btn-primary">Youth Classes and Camps</a>
@@ -177,7 +194,7 @@
         </div>
         <div class="col">
             <div class="row justify-content-center">
-                <h1 class="display-1 text-light"><i class="fa fa-user"></i></h1>
+                <h1 class="display-1 text-light"><i class="fas fa-user"></i></h1>
             </div>
             <div class="row justify-content-center">
                 <a href="#" class="btn btn-primary">Adult Classes</a>
@@ -185,7 +202,7 @@
         </div>
         <div class="col">
             <div class="row justify-content-center">
-                <h1 class="display-1 text-light"><i class="fa fa-building"></i></h1>
+                <h1 class="display-1 text-light"><i class="fa fa-users"></i></h1>
             </div>
             <div class="row justify-content-center">
                 <a href="#" class="btn btn-primary">Teambuilding Events</a>
@@ -198,145 +215,175 @@
     <div class="row justify-content-center">
         <h3>Use Our Tools</h3>
     </div>
+    <!--Top row-->
     <div class="row">
-        <!--Here's where the list of tools and names goes-->
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-air-freshener"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>Woodshop</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-meteor"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>Metal Shop</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-plug"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>Electronics</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-laptop"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>Computer</p>
+            </div>
+        </div>
+    </div>
+    <!--Bottom Row-->
+    <div class="row">
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-print"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>3D Printers</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-tshirt"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>Textiles</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-cut"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>Laser Cutters</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <h4 class="display-4"><i class="fas fa-briefcase"></i></h4>
+            </div>
+            <div class="row justify-content-center">
+                <p>Workspace</p>
+            </div>
+        </div>
     </div>
     <div class="row justify-content-center">
         <a href="#" class="btn btn-primary">Book Time</a>
     </div>
 </div>
-<!--Newsletter-->
-<div class="container-flex classesBG">
+
+<!--Contact us-->
+<div class="container-fluid classesBG"">
     <div class="row justify-content-center">
-        <h3>Newsletter</h3>      
+        <h3 class="text-light">Contact Us</h3>
     </div>
-    <div class="row justify-content-center">
-        <!--Something about signing up for the newsletter-->
-    </div>
-    <div class="row justify-content-center">
-        <form class="form-inline">
-            <div class="form-group">
-                <input type="email" class="form-control" id="newsletterEmail" placeholder="email@example.com">
+    <div class="row">
+        <div class="col p-1 justify-content-center d-flex" id="mnMap">
+            <div id='map' style='width: 400px; height: 300px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiYXNobGV5Y2hhcmQiLCJhIjoiY2ptZm51eWFoNnh6dTN3b2d3dTcybGc2eSJ9.7mxNOMQcPGPBT1DBdNWkqg';
+                    var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+                    center: [-122.015313, 37.416425], // starting position [lng, lat]
+                    zoom: 14 // starting zoom
+                    });
+
+                    var marker = new mapboxgl.Marker()
+                        .setLngLat([-122.015313, 37.416425])
+                        .addTo(map);
+                </script>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>     
+        <div class="col-md m-auto">
+            <div class="row">
+                <a role="button" class="btn btn-link text-light text-wrap" href="https://goo.gl/maps/bAiV7a6Y2fu" target="_blank" data-content="https://goo.gl/maps/bAiV7a6Y2fu" data-type="external" rel="noopener"><i class="fas fa-map-marked-alt"></i> 234 East Caribbean Drive, Sunnyvale, CA 94089</a>
+            </div>
+            <div class="row ">
+                <a role="button"  class="btn btn-link text-light" href="tel:+14086852500"><i class="fa fa-phone"></i> (408)685-2500</a>
+            </div>
+            <div class="row">
+                <a role="button" class="btn btn-link text-light" href="mailto:info@makernexus.org "><i class="fa fa-envelope-open"></i> info@makernexus.org</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Newsletter and socials-->
+<div class="container-flex">
+    <div class="row justify-content-center">
+        <h3>Stay in Touch</h3>      
+    </div>
+    <div class="row d-flex m-2
+    ">
+        <div class="col-md">
+            <div class="row">
+                <h4>Newsletter</h4>
+            </div>
+            <div class="row">
+                <p>Sign up for our monthly newsletter</p>
+            </div>
+            <div class="row">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="newsletterEmail" placeholder="email@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form> 
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="row">
+                <h4>Social Media</h4>
+            </div>
+            <div class="row">
+                <p> Follow us on social media. Tag us in your posts to help spread the word!</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="btn btn-social-icon btn-instagram " href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-social-icon btn-pinterest" href="http://pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <!--Dontations, blah-->
-<div class="container-fluid">
-    <div class="row">
-        <h3>Donate</h3>
+<div class="container-fluid classesBG">
+    <div class="row justify-content-center">
+        <h3 class="text-light">Donate</h3>
     </div>
-    <div class="row">
-        <!---->
+    <div class="row justify-content-center">
+        <p class="text-light">Your donations help us serve the community.</p>
     </div>
-    <div class="row">
-    
+    <div class="row justify-content-center">
+        <button class="btn btn-primary m-1"><a href="#" class="text-light">Donate</a></button>
     </div>
 </div>
 
-<!--Contact us-->
 
 <!--Partnerships-->
-
- <!-- 
-        <div  class="container-fluid">
-            <div class="row">
-                <div id="main_logo"class="col">
-                    <img src="https://static.wixstatic.com/media/85a375_7559972cf01f406da12b19f545f36efa~mv2.png/v1/fill/w_122,h_118,al_c,q_85,usm_0.66_1.00_0.01/85a375_7559972cf01f406da12b19f545f36efa~mv2.webp">
-                </div>
-                <div id="name"class="col-9">
-                    <h1>MAKER NEXUS</h1>
-                    <h2 id="tagline">We Grow Makers</h2>
-                    <h3>Learn - Practice - Share</h3> 
-                </div>
-            </div>    
-
-        -->  
-
-   
-
-       <!--
-    <div id="COVID-19Info" class="jumbotron">
-        <div class="row">
-                <h1>COVID-19 Information</h1>
-                <h3>Maker Nexus is OPEN for members, classes, and summer camps following the orders of the Santa Clara County Public Health Commission</h3>
-        </div>
-        <div id="COVID-Practices" class="row">
-            <div class="col-sm">
-                <p>Be Respectful and keep others safe:<br>No drop-in visits at this time- <a href=" https://makernexus.ezfacility.com/login">reserve a work area online</a></p> 
-                <p><b>COVID-19 Procedures</b></p>
-                <ul>
-                    <li>Stay home if you don't feel well or have been exposed to someone who tested positive to COVID-19</li>
-                    <li>Badge in with your RFID card (contract tracing). You will not be granted access without your RFID card</li>
-                    <li>Wear a face mask at all times</li>
-                    <li>Maintain a 6-foot disance from other individuals</li>
-                    <li>Wash your hands or use hand sanitizer upon arrival</li>
-                    <li>Clean and sanitize surfaces and objects you touched</li>
-                    <li>Stay within your reserved area and workstation</li>
-                    <li>No food or drink inside the workspace</li>
-                </ul>
-            </div> 
---> 
-            <!--Make this fit dynamically-->
-            <!--
-            <div id="COVID-Video" class="col-md">
-                <iframe  class="align-middle" width=100% height=auto src="https://www.youtube.com/embed/nbiQgtFa9Ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-             -->
-  
-
-    <!--TODO: Make this a carousel eventually-->
-    <!--
-    <div class="container">
-        <div class="row-md">
-
-            <div class="card">
-                <img src="https://static.wixstatic.com/media/968edc_3f0069b393fd4cbb9d7aafce577e70ec~mv2.jpg/v1/crop/x_120,y_0,w_719,h_719/fill/w_136,h_132,al_c,q_80,usm_0.66_1.00_0.01/drawerpullcomputermesh.webp">
-                <div class="card-body">
-                    <h5 class="card-title">Learn Skills</h5>
-                    <p class="card-text">Learn to make anything. Youth or adult. Beginner or Expert. With our classes, anyone can be a maker.</p>
-                    <a class="btn btn-primary" href="#">Youth Classes</a>
-                    <a class="btn btn-primary" href="#">Adult Classes</a>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img class="img-fluid" src="https://static.wixstatic.com/media/968edc_94366926f9e14e508966aaa9bf7b3429~mv2_d_3264_2448_s_4_2.jpg/v1/crop/x_408,y_0,w_2448,h_2448/fill/w_136,h_132,al_c,q_80,usm_0.66_1.00_0.01/IMG_4704_JPG.webp">
-                <div class="card-body">
-                    <h5 class="card-title">Get Involved</h5>
-                    <p class="card-text">Our makerspace is your workshop. Members use all our tools and expertise to build anything they can imagine.</p>
-                    <a class="btn btn-primary" href="#">Makerspace Membership</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://static.wixstatic.com/media/968edc_99cc99167d41449899a85eb589cafe88~mv2.jpg/v1/crop/x_268,y_0,w_640,h_640/fill/w_136,h_132,al_c,q_80,usm_0.66_1.00_0.01/IMG_6791_JPG.webp">
-                <div class="card-body">
-                    <h5 class="card-title">Make Things</h5>
-                    <p class="card-text">Volunteer your time, teach a class, provide a scholarship, make a donation. There are many to ways to support us.</p>
-                    <a class="btn btn-primary" href="#">Get Involved</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="calendar" class="container">
-        <div class= "row">
-            <div class="col-8">
-                <h1>Check out our classes, youth camps, workshops and events</h1>
-            </div>
-            <div class="col">
-                <button class="btn btn-info">Month View</button>
-            </div>
-
-        </div>
-
-    </div>
-
--->
 
 
     <footer>
@@ -366,16 +413,16 @@
                 </div>  
                 <div id="contactInfo"class="col-md">
                     <p><b>Contact Us</b></p>
-                    <a role="button" class="btn btn-link" href="https://goo.gl/maps/bAiV7a6Y2fu" target="_blank" data-content="https://goo.gl/maps/bAiV7a6Y2fu" data-type="external" rel="noopener"><i class="fa fa-map-marker"></i> 234 East Caribbean Drive, Sunnyvale, CA 94089</a>
+                    <a role="button" class="btn btn-link" href="https://goo.gl/maps/bAiV7a6Y2fu" target="_blank" data-content="https://goo.gl/maps/bAiV7a6Y2fu" data-type="external" rel="noopener"><i class="fas fa-map-marked-alt"></i> 234 East Caribbean Drive, Sunnyvale, CA 94089</a>
                     <a role="button"  class="btn btn-link" href="tel:+14086852500"><i class="fa fa-phone"></i> (408)685-2500</a>
                     <a role="button" class="btn btn-link" href="mailto:info@makernexus.org "><i class="fa fa-envelope-open"></i> info@makernexus.org</a>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
                 <a class="btn btn-social-icon btn-pinterest" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
             </div>
 
@@ -390,5 +437,14 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYXNobGV5Y2hhcmQiLCJhIjoiY2ptZm51eWFoNnh6dTN3b2d3dTcybGc2eSJ9.7mxNOMQcPGPBT1DBdNWkqg';
+            var map = new mapboxgl.Map({
+            container: 'mnMap',
+            style: 'mapbox://styles/mapbox/streets-v11'
+            });
+    </script>
 
 </body>
