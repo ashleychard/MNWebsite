@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.14.0-web/css/all.css"/>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' />
+    <link rel="stylesheet" href= "../css/styles.css">
+    <title>Maker Nexus | Makerspace | Sunnyvale, California</title>
+
+    <!--Map Plugin-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top align-content-end">
+    <a class="navbar-brand" href="../index.html"><img src="https://static.wixstatic.com/media/85a375_7559972cf01f406da12b19f545f36efa~mv2.png/v1/fill/w_122,h_118,al_c,q_85,usm_0.66_1.00_0.01/85a375_7559972cf01f406da12b19f545f36efa~mv2.webp" height="30" width ="30"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mnNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse text-center" id="mnNavbar">
+        <ul class="navbar-nav p-0 justify-content-center align-self-center d-flex">
+            <li class="nav-item text-wrap justify-content-center align-self-center d-flex dropdown">
+                <a class="nav-link text-wrap dropdown-toggle" href="classesAndEvents.html" id="classesAndEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Classes and Events</a>
+                <div class="dropdown-menu" aria-labelledby="classesAndEvents">
+                    <a class="dropdown-item" href="classesAndEvents.html">All Classes and Events</a>
+                    <a class="dropdown-item" href="youthClassesAndCamps.html">Youth Classes and Camps</a>
+                    <a class="dropdown-item" href="adultClasses.html">Adult Classes</a>
+                    <a class="dropdown-item" href="teamBuilding.html">Teambuilding Events</a>
+                </div>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+                <a class="nav-link" href="reservations.html" >Reservations</a>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex dropdown">
+                <a class="nav-link text-wrap dropdown-toggle"  id="supportUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="supportUs.html">Support Us</a>
+                <div class="dropdown-menu" aria-labelledby="supportUs">
+                    <a class="dropdown-item" href="supportUs.html">Ways to support us</a>
+                    <a class="dropdown-item" href="donate.html">Donate</a>
+                    <a class="dropdown-item" href="volunteer.html">Volunteer</a>
+                    <a class="dropdown-item" href="spreadTheWord.html">Spread the Word</a>
+                </div>
+            </li>
+            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+                <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+        </ul>
+        <span class="navbar-text ml-auto">
+            <button class="btn btn-primary"><a href="bookATour.html" class="text-light">Book a Tour</a></button>
+        </span>
+    </div>
+</nav>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div id="footerLinks" class="col">
+                <p><b>Navigation</b></p>
+                <ul class="list-unstyled">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="classesAndEvents.html">Classes and Events</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="supportUs.html">Support Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="bookATour.html">Book a Tour</a></li>
+                    <li><a href="contactUs.html"> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div id="operatingHours" class="col">
+                <p><b>Hours</b></p>
+                <p>We are open for members with reservations or by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbtzpWcJTCfQbyWbE40HV6kAozX6WHfsPSQuJWAQ9kIWb81w/viewform" target="_blank" data-content="https://docs.google.com/forms/d/e/1FAIpQLSfbtzpWcJTCfQbyWbE40HV6kAozX6WHfsPSQuJWAQ9kIWb81w/viewform" data-type="external" rel="noopener">booking a tour:</a></p>
+                <ul class="list-unstyled">
+                    <li>Monday-Tuesday 10:00 AM-5:00 PM</li>
+                    <li>Wednesday-Sunday 10:00 AM-10:00 PM</li>        
+                </ul>
+            </div>  
+            <div id="contactInfo"class="col-md">
+                <p><b>Contact Us</b></p>
+                <a role="button" class="btn btn-link" href="https://goo.gl/maps/bAiV7a6Y2fu" target="_blank" data-content="https://goo.gl/maps/bAiV7a6Y2fu" data-type="external" rel="noopener"><i class="fas fa-map-marked-alt"></i> 234 East Caribbean Drive, Sunnyvale, CA 94089</a>
+                <a role="button"  class="btn btn-link" href="tel:+14086852500"><i class="fa fa-phone"></i> (408)685-2500</a>
+                <a role="button" class="btn btn-link" href="mailto:info@makernexus.org "><i class="fa fa-envelope-open"></i> info@makernexus.org</a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-social-icon btn-pinterest" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
+        </div>
+
+        <div id="nonprofitStatus" class="row justify-content-center text-center">
+        <p>We are a 501(c)3 tax exempt organization | Federal EIN: 82-3925333 | California Corporation Number: C4104356</p>
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
