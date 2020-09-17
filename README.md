@@ -28,7 +28,11 @@ Ensure the following items are in the head of the document:
     <link rel="stylesheet" href= "css/styles.css">
 
 
-Ensure the following scripts are added at the end of the body
+Ensure the following scripts are added at the end of the body:
 <script src="node_modules/jquery/dist/jquery.slim.min.js"><script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+*Note:* For the scripts, and links to the included stylesheets, ensure that they reflect the directory structire properly. 
+
+For example, if you are adding a new file to the HTML folder, add ../ to the beginning.

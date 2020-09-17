@@ -55,6 +55,139 @@
         </span>
     </div>
 </nav>
+<h2>Reserve a Workspace</h2>
+
+<!--Add COVID 19 notice that all spaces must be reserved-->
+
+<div class="container my-3">
+    <div class="row">
+        <h3>Reserve a workstation</h3>
+    </div>
+    <div class="row">
+        <p>During COVID-19, you must have a reservation to use equipment before entering Maker Nexus.</p>
+    </div>
+    <div class="row">
+        <a class="btn btn-primary" href="https://makernexus.ezfacility.com/login">Book a Workspace</a>
+</div>
+
+<div class="container my-3">
+    <div class="row">
+        <h3>Reserve a Room</h3>
+    </div>
+    <div class="row">
+        <p>There are three rooms available for short-term reservations:</p>
+    </div>
+    <div class="row">
+        <ul>
+            <li>8 person conference room with table</li>
+            <li>10 Person computer lab</li>
+            <li>25 person event room with tables</li>
+        </ul>
+    </div>
+    <div class="row">
+        <p>Use the form below to request a room reservation up to 60 days in advance. </p>
+    </div>
+    <div class="row">
+    <!--Insert form here about reserving a room-->
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="contactFirstName" >First Name</label>
+                        <input type="text" class="form-control" id="contactFirstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="contactLastName">Last Name</label>
+                        <input type="text" class="form-control" id="contactLastName" placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="contactemail">Email</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="email@example.com">
+                    </div>
+                </div>
+               <div class="col">
+                <div class="form-group">
+                    <label for="contactPhone">Phone Number</label>
+                    <input type="phone" class="form-control" id="contactPhone" placeholder="(123)555-1234">
+                </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="groupName">Group Name</label>
+                        <input type="text" class="form-control" id="groupName" placeholder="Group Name"> 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="eventDate">Event Date</label>
+                        <input type="date" class="form-group" id="eventDate" placeholder="1/1/2020">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="startTime">Start Time</label>
+                        <input id="startTime" type="time" placeholder="10:00">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="endTime">End Time</label>
+                        <input id="endTime" type="time" placeholder="10:00">
+                    </div>
+                </div>
+
+            </div>
+           <div class="row">
+               <div class="col">
+                   <div class="form-group">
+                       <label for="roomSelect">Room to Reserve</label>
+                       <select id="roomSelect" class="form-control">
+                            <option selected>select a room</option>
+                            <option>8 person conference room</option>
+                            <option>10 person computer lab </option>
+                            <option>25 person event space</option>
+                            <option>Any available room</option>
+                       </select>
+                   </div>
+               </div>
+           </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="groupExplanation">Tell us about your group and what you will do in the meeting</label>
+                    <textarea class="form-control" rows="5" id="groupExplanation">What is your group? What are y'all doing?</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="extraInformation">Any additional information</label>
+                    <textarea class="form-control" rows="5" id="extraInformation">Acommodations, equipment needed, etc...</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <submit class="btn btn-primary">Submit Request</submit>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
 
 <footer>
     <div class="container">
@@ -104,9 +237,9 @@
 </footer>
 
 
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
