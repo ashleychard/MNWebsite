@@ -17,3 +17,7 @@ footer{
     background-color:#52837E;
 }
 
+blockquote p{
+    font-size: .9rem;
+    font-style: italic;
+}
