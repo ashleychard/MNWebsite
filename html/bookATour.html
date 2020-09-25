@@ -31,13 +31,13 @@
                     <a class="dropdown-item" href="teamBuilding.html">Teambuilding Events</a>
                 </div>
             </li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+            <li class="nav-item text-wrap justify-content-center align-self-center d-flex">
                 <a class="nav-link" href="reservations.html" >Reservations</a>
             </li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+            <li class="nav-item text-wrap justify-content-center align-self-center d-flex">
                 <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex dropdown">
+            <li class="nav-item text-wrap justify-content-center align-self-center d-flex dropdown">
                 <a class="nav-link text-wrap dropdown-toggle"  id="supportUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="supportUs.html">Support Us</a>
                 <div class="dropdown-menu" aria-labelledby="supportUs">
                     <a class="dropdown-item" href="supportUs.html">Ways to support us</a>
@@ -46,7 +46,7 @@
                     <a class="dropdown-item" href="spreadTheWord.html">Spread the Word</a>
                 </div>
             </li>
-            <li class="nav-link text-wrap justify-content-center align-self-center d-flex">
+            <li class="nav-item text-wrap justify-content-center align-self-center d-flex">
                 <a class="nav-link" href="membership.html">Membership</a>
             </li>
         </ul>
@@ -55,7 +55,101 @@
         </span>
     </div>
 </nav>
-
+<div class="container-flex p-5">
+    <div class="row">
+        <h2>Book a Tour</h2>
+    </div>
+    <div class="row">
+        <p>We'd be honored to have you learn more about us. Please fill out the form below. Tours are available Wednesday-Sunday 4:00PM-8:00PM and last approximately 30 minutes.</p>
+    </div>
+    <div class="row">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="tourName">Your Name</label>
+                        <input type="text" class="form-control" id="tourName" placeholder="FirstName LastName">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="tourEmail">Email Address</label>
+                        <input type="email" class="form-control" id="tourEmail" placeholder="email@example.com">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="tourPhone">Phone Number</label>
+                        <input type="tel" class="form-control" id="tourPhone" placeholder="(408)555-1234">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>Select Tour Date(s) and times.</p>
+            </div>
+            <div class="row px-3">
+                <div class="col">
+                    <div class="form-group py-1">
+                        <div class="row py-1">
+                            <div class="col">
+                                <input type="checkbox" class="form-check-input" id="tourWed">
+                                <label class="form-check-label" for="tourWed"> Wednesday</label>
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="time" id="wedTime" name="wedTime" min="16:00" max="20:00">
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col">
+                                <input type="checkbox" class="form-check-input" id="tourThurs">
+                                <label class="form-check-label" for="tourThurs"> Thursday</label>
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="time" id="thursTime" name="thursTime" min="16:00" max="20:00">
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col">
+                                <input type="checkbox" class="form-check-input" id="tourFri">
+                                <label class="form-check-label" for="tourFri"> Friday</label>
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="time" id="friTime" name="friTime" min="16:00" max="20:00">
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col">
+                                <input type="checkbox" class="form-check-input" id="tourSat">
+                                <label class="form-check-label" for="tourSat"> Saturday</label>
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="time" id="satTime" name="satTime" min="16:00" max="20:00">
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col">
+                                <input type="checkbox" class="form-check-input" id="tourSun">
+                                <label class="form-check-label" for="tourSun"> Sunday</label>
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="time" id="sunTime" name="sunTime" min="16:00" max="20:00">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="form-group">
+                    <submit class="btn btn-primary">Submit Request</submit>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <footer>
     <div class="container">
         <div class="row">
@@ -104,9 +198,9 @@
 </footer>
 
 
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
